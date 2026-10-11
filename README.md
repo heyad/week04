@@ -4,10 +4,22 @@ This project is designed as a teaching lab for a 4th-year Computer Vision module
 
 The goal is to show how a pre-trained ResNet18 model can be adapted to chest X-ray classification using transfer learning and fine-tuning. The app also displays a Grad-CAM heatmap so students can see which regions of the image influenced the model's decision.
 
+## Project overview
+
+![Landing screen for the chest X-ray app](Illustrations/landingScreen.png)
+
+## Dataset source
+
+This project uses the Chest X-Ray Pneumonia dataset from Paul Mooney on Kaggle:
+https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia
+
+The raw dataset is not included in this repository. It should be downloaded separately and placed in the local `data/` folder before training.
+
 ## Project structure
 
 - `data/` contains the chest X-ray dataset
 - `models/` stores trained model weights
+- `Illustrations/` contains project screenshots and UI mockups
 - `model.py` creates the ResNet18 transfer-learning model
 - `data_utils.py` loads the dataset and prepares DataLoaders
 - `training_utils.py` trains and evaluates the model
@@ -44,7 +56,7 @@ The code is intentionally simple and heavily commented so students can see:
    pip install -r requirements.txt
    ```
 
-3. Place your dataset under `data/` using one of the supported folder structures.
+3. Download the Chest X-ray Pneumonia dataset and place it under `data/` using one of the supported folder structures.
 
 4. Train the model:
 

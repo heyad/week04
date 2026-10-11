@@ -1,8 +1,0 @@
-.venv/
-__pycache__/
-*.pyc
-.DS_Store
-.ipynb_checkpoints/
-models/*.pth
-temp_uploaded_image.png
-data/
