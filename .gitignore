@@ -1,0 +1,10 @@
+.DS_Store
+COPILOT_INSTRUCTIONS.md
+data/
+models/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+temp_uploaded_image.png
